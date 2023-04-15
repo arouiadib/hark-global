@@ -25,7 +25,7 @@
 
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
   <div class="row">
-    <p id="block-newsletter-label" class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
+{*    <p id="block-newsletter-label" class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>*}
     <div class="col-md-7 col-xs-12">
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
         <div class="row">
@@ -57,9 +57,9 @@
             <div class="clearfix"></div>
           </div>
           <div class="col-xs-12">
-              {if $conditions}
+{*              {if $conditions}
                 <p>{$conditions}</p>
-              {/if}
+              {/if}*}
               {if $msg}
                 <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
                   {$msg}
