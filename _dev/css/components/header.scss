@@ -58,9 +58,15 @@
       top: 50%;
       transform: translateY(-50%);
       right: 0;
+      .social-links {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
     }
 
-    .currency-selector {
+/*    .currency-selector {
       margin-top: 0.9375rem;
       margin-left: 0.9375rem;
       white-space: nowrap;
@@ -147,7 +153,7 @@
       &.expand-more {
         margin-left: -0.375rem;
       }
-    }
+    }*/
   }
 
   .header-top {
