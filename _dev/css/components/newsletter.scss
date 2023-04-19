@@ -22,23 +22,6 @@
     border:1px solid grey;
     padding:2px;
 
-    /*
-    .row {
-      .col-xs-12:last-of-type {
-        p {
-          font-size: 0.75rem;
-          color: $gray;
-        }
-      }
-
-      .col-xs-12:first-of-type {
-        .btn-primary:first-of-type {
-          margin-left: 0.5rem;
-        }
-      }
-    }
-    */
-
     input[type="email"] {
       width: 80%;
       border: 1px solid $border-gray;
@@ -60,6 +43,24 @@
       color:white;
        height: 30px;
        width: 30px;
+    }
+  }
+
+  .alert {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0;
+
+    &.alert-danger{
+      color: #a94442;
+      border: none;
+      background-color: transparent;
+    }
+    &.alert-success{
+      color: #3c763d;
+      border: none;
+      background-color: transparent;
     }
   }
 }
