@@ -97,6 +97,7 @@
       </div>
       <div class="row">
         <div class="col-md-8">
+          <label>{l s='Stay Tuned'}</label>
           {widget name="ps_emailsubscription"}
         </div>
         <div class="col-md-2">
