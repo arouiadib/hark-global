@@ -105,7 +105,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12"></div>
+        <div class="col-xs-12">
+          {widget name="ps_linklist" hook="displayFooter"}
+        </div>
       </div>
     </div>
   </div>
