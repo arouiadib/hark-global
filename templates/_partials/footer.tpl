@@ -95,7 +95,18 @@
         <div class="col-md-8"></div>
         <div class="col-md-2"></div>
       </div>
-
+      <div class="row">
+        <div class="col-md-8">
+          {widget name="ps_emailsubscription"}
+        </div>
+        <div class="col-md-2">
+          {* This is a duplicated code from hs_topmenu*}
+          {hook h="displaySocialButtons" mod="hs_topmenu"}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"></div>
+      </div>
     </div>
   </div>
 </div>
