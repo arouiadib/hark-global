@@ -31,7 +31,7 @@
   </div>
 </div>
 <div class="footer-container">
-  <div class="container">
+  <div class="container-fluid">
     <div class="col-xs-12 col-md-6">
       {hook h="displaySubShopsBlocks" mod="hs_topmenu"}
     </div>
