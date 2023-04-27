@@ -1,9 +1,8 @@
 #footer {
-  padding-top: 2.5rem;
   background-color: #4E4E4E;
   color: white;
 
-  .logo {
+  .logo, .logo-social {
       filter: brightness(0) invert(1);
   }
 }
@@ -96,69 +95,6 @@
   }
 }
 
-.facebook {
-  background-image: url("../img/facebook.svg");
-
-  &::before {
-    content: "";
-    background-image: url("../img/facebook-blue.svg");
-  }
-
-  &.icon-gray {
-    background-image: url("../img/facebook-gray.svg");
-
-    &:hover {
-      background-image: url("../img/facebook-blue.svg");
-    }
-  }
-}
-
-.twitter {
-  background-image: url("../img/twitter.svg");
-
-  &::before {
-    content: "";
-    background-image: url("../img/twitter-blue.svg");
-  }
-
-  &.icon-gray {
-    background-image: url("../img/twitter-gray.svg");
-
-    &:hover {
-      background-image: url("../img/twitter-blue.svg");
-    }
-  }
-}
-
-.linkedin {
-  background-image: url("../img/linkedin.svg");
-  background-position: center center;
-}
-
-.rss {
-  background-image: url("../img/rss.svg");
-}
-
-.youtube {
-  background-image: url("../img/youtube.svg");
-}
-
-.googleplus {
-  background-image: url("../img/gplus.svg");
-
-  &::before {
-    content: "";
-    background-image: url("../img/gplus-blue.svg");
-  }
-
-  &.icon-gray {
-    background-image: url("../img/gplus-gray.svg");
-
-    &:hover {
-      background-image: url("../img/gplus-blue.svg");
-    }
-  }
-}
 
 #block_myaccount_infos {
   .myaccount-title a {
@@ -166,30 +102,6 @@
   }
 }
 
-.pinterest {
-  background-image: url("../img/pinterest.svg");
-
-  &::before {
-    content: "";
-    background-image: url("../img/pinterest-blue.svg");
-  }
-
-  &.icon-gray {
-    background-image: url("../img/pinterest-gray.svg");
-
-    &:hover {
-      background-image: url("../img/pinterest-blue.svg");
-    }
-  }
-}
-
-.vimeo {
-  background-image: url("../img/vimeo.svg");
-}
-
-.instagram {
-  background-image: url("../img/instagram.svg");
-}
 
 .footer-container {
   padding-top: $extra-large-space;
@@ -226,6 +138,7 @@
   .footer-container {
     margin-top: 0;
     box-shadow: none;
+    padding-top: 0;
 
     .wrapper {
       /* stylelint-disable */
@@ -242,12 +155,9 @@
 
       ul {
         margin-bottom: 0;
-        background-color: $gray-lighter;
-
         > li {
           padding: 0.625rem;
           font-weight: 600;
-          border-bottom: 1px solid $white;
 
           a {
             color: $gray-darker;
