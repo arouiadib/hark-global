@@ -37,8 +37,8 @@
     </div>
     <div class="col-xs-12 col-md-6">
       <div class="row">
+        <label>{l s='Stay Tuned'}</label>
         <div class="col-sm-12 col-md-8">
-          <label>{l s='Stay Tuned'}</label>
           {widget name="ps_emailsubscription"}
         </div>
         <div class="col-sm-12 col-md-4">

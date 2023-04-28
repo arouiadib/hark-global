@@ -5,6 +5,9 @@
   .logo, .logo-social {
       filter: brightness(0) invert(1);
   }
+  .logo {
+    max-width: 150px;
+  }
 }
 
 .block-contact {
@@ -101,7 +104,6 @@
     color: $gray-darker;
   }
 }
-
 
 .footer-container {
   padding-top: $extra-large-space;
