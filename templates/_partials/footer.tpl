@@ -22,6 +22,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+
 <div class="container">
   <div class="row">
     {block name='hook_footer_before'}
@@ -30,26 +31,27 @@
   </div>
 </div>
 <div class="footer-container">
-  <div class="container">
-    <div class="row">
-      {block name='hook_footer'}
-        {hook h='displayFooter'}
-      {/block}
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-6 footer-blocks">
+      {hook h="displaySubShopsBlocks" mod="hs_topmenu"}
     </div>
-    <div class="row">
-      {block name='hook_footer_after'}
-        {hook h='displayFooterAfter'}
-      {/block}
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p class="text-sm-center">
-          {block name='copyright_link'}
-            <a href="https://www.prestashop.com" target="_blank" rel="noopener noreferrer nofollow">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
-          {/block}
-        </p>
+    <div class="col-xs-12 col-md-6 footer-main">
+      <div class="footer-newsletter-social">
+        <div class="">
+          <label>{l s='Stay Tuned'}</label>
+        </div>
+        <div class="col-sm-12 col-md-8 p-0">
+          {widget name="ps_emailsubscription"}
+        </div>
+        <div class="col-sm-12 col-md-4 p-0">
+          {* This is a duplicated code from hs_topmenu*}
+          {hook h="displaySocialButtons" mod="hs_topmenu"}
+        </div>
+      </div>
+      <div class="footer-main-links">
+        <div class="col-xs-12 p-0">
+          {widget name="ps_linklist" hook="displayFooter"}
+        </div>
       </div>
     </div>
   </div>

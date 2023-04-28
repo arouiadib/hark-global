@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
+<div class="block_newsletter col-lg-8 col-md-12 col-sm-12 p-0" id="blockEmailSubscription_{$hookName}">
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
               <input
                 name="email"
