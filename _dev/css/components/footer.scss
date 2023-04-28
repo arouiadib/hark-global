@@ -52,59 +52,6 @@
   font-weight: 700;
 }
 
-.block-social {
-  text-align: right;
-
-  ul {
-    display: flex;
-
-    @include media-breakpoint-down(sm) {
-      flex-flow: wrap;
-    }
-
-    li {
-      display: inline-block;
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: 0.125rem;
-      cursor: pointer;
-      background-color: $gray-light;
-      background-repeat: no-repeat;
-
-      @include media-breakpoint-down(sm) {
-        width: 2rem;
-        height: 2rem;
-        margin-right: 1.3rem;
-        margin-bottom: 1.3rem;
-        background-size: contain;
-      }
-
-      &:hover {
-        background-color: $brand-primary;
-      }
-
-      a {
-        display: block;
-        height: 100%;
-        overflow: hidden;
-        text-indent: 100%;
-        white-space: nowrap;
-
-        &:hover {
-          color: transparent;
-        }
-      }
-    }
-  }
-}
-
-
-#block_myaccount_infos {
-  .myaccount-title a {
-    color: $gray-darker;
-  }
-}
-
 .footer-container {
   padding-top: $extra-large-space;
   overflow: hidden;
@@ -121,18 +68,12 @@
 
   li a {
     font-size: $font-size-sm;
-    color: $gray;
+    color: white;
     cursor: pointer;
 
     &:hover {
       color: $brand-primary;
     }
-  }
-}
-
-.links {
-  .collapse {
-    display: inherit;
   }
 }
 
@@ -169,38 +110,6 @@
   }
 
   .links {
-    .collapse {
-      display: none;
-
-      &.in {
-        display: block;
-      }
-    }
-
-    .title {
-      padding: 0.625rem;
-      cursor: pointer;
-      border-bottom: 1px solid $gray-lighter;
-
-      .collapse-icons .remove {
-        display: none;
-      }
-    }
-
-    .title[aria-expanded="true"] .collapse-icons {
-      .add {
-        display: none;
-      }
-
-      .remove {
-        display: block;
-      }
-    }
-
-    .navbar-toggler {
-      display: inline-block;
-      padding: 0;
-    }
   }
 }
 
