@@ -90,9 +90,6 @@
       .footer-block-links {
         border-bottom: none;
       }
-      .footer-block-logo {
-        padding-top: 0;
-      }
     }
   }
 }
@@ -104,8 +101,15 @@
       .footer-block-links {
         border-bottom: none;
       }
-      .footer-block-logo {
-        padding-top: 0rem;
+    }
+    .footer-main {
+      .footer-newsletter-social {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .social-links{
+        padding-top: 6px;
+        padding-bottom: 20px;
       }
     }
   }
@@ -134,9 +138,6 @@
       border-bottom: none;
       .footer-block-links {
         border-bottom: 1px solid white;
-      }
-      .footer-block-logo {
-        padding-top: 2.5rem;
       }
     }
   }
