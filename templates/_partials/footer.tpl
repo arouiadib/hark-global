@@ -32,7 +32,7 @@
 </div>
 <div class="footer-container">
   <div class="container-fluid">
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-6 footer-blocks">
       {hook h="displaySubShopsBlocks" mod="hs_topmenu"}
     </div>
     <div class="col-xs-12 col-md-6">

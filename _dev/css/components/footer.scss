@@ -10,25 +10,6 @@
   }
 }
 
-.block-contact {
-  font-size: 0.875rem;
-  color: $gray;
-
-  .block-contact-title {
-    color: $gray-darker;
-  }
-
-  .navbar-toggler .material-icons {
-    color: $gray-darker;
-  }
-
-  @include media-breakpoint-down(sm) {
-    #contact-infos {
-      padding: 0.625rem;
-      padding-top: 0;
-    }
-  }
-}
 
 .linklist {
   .blockcms-title a {
@@ -56,6 +37,19 @@
   padding-top: $extra-large-space;
   overflow: hidden;
 
+  .footer-blocks {
+    .footer-block-logo {
+      margin-top: 15px;
+    }
+    .footer-block-content {
+      margin-bottom: 15px;
+    }
+    .footer-block-links {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid white;
+    }
+  }
   .h3,
   .h4 {
     margin-bottom: 1rem;
@@ -107,9 +101,6 @@
         }
       }
     }
-  }
-
-  .links {
   }
 }
 
