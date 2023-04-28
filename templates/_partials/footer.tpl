@@ -36,18 +36,20 @@
       {hook h="displaySubShopsBlocks" mod="hs_topmenu"}
     </div>
     <div class="col-xs-12 col-md-6">
-      <div class="row">
+      <div class="">
+        <div class="">
         <label>{l s='Stay Tuned'}</label>
-        <div class="col-sm-12 col-md-8">
+          </div>
+        <div class="col-sm-12 col-md-8 p-0">
           {widget name="ps_emailsubscription"}
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 p-0">
           {* This is a duplicated code from hs_topmenu*}
           {hook h="displaySocialButtons" mod="hs_topmenu"}
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="">
+        <div class="col-xs-12 p-0">
           {widget name="ps_linklist" hook="displayFooter"}
         </div>
       </div>

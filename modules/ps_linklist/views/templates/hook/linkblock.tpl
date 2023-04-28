@@ -23,9 +23,9 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="links">
-  <div class="row">
+  <div class="">
   {foreach $linkBlocks as $linkBlock}
-    <div class="col-md-6 wrapper">
+    <div class="col-md-6 p-0 wrapper">
       <ul id="footer_sub_menu_{$linkBlock.id}">
         {foreach $linkBlock.links as $link}
           <li>
