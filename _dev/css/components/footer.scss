@@ -41,19 +41,9 @@
     .footer-block-logo {
       margin-top: 15px;
     }
-    .footer-block-content {
-      margin-bottom: 15px;
-    }
     .footer-block-links {
-      padding-bottom: 30px;
-      margin-bottom: 30px;
-      border-bottom: 1px solid white;
+      border-bottom: none;
     }
-  }
-  .h3,
-  .h4 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
   }
 
   li {
@@ -77,6 +67,33 @@
     box-shadow: none;
     padding-top: 0;
 
+    .footer-container {
+      padding-top: $extra-large-space;
+      overflow: hidden;
+
+      .footer-blocks {
+        .footer-block-links {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          border-bottom: none;
+        }
+      }
+
+      li {
+        margin-bottom: 0.3125rem;
+      }
+
+      li a {
+        font-size: $font-size-sm;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+    }
+
     .wrapper {
       /* stylelint-disable */
       padding-right: 0 !important;
@@ -85,11 +102,8 @@
     }
 
     .links {
-      .h3 {
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-
+      padding-top: 10px;
+      margin-top: 30px;
       ul {
         margin-bottom: 0;
         > li {
@@ -105,11 +119,57 @@
 }
 
 @include media-breakpoint-down(md) {
-  .block-social {
-    text-align: center;
-  }
+  .footer-container {
+    padding-top: $extra-large-space;
+    overflow: hidden;
 
-  .block-contact {
-    padding-left: 1.5rem;
+    .footer-blocks {
+       border-bottom: 1px solid white;
+      .footer-block-links {
+        border-bottom: none;
+      }
+    }
+
+    li {
+      margin-bottom: 0.3125rem;
+    }
+
+    li a {
+      font-size: $font-size-sm;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .footer-container {
+    padding-top: $extra-large-space;
+    overflow: hidden;
+
+    .footer-blocks {
+      border-bottom: none;
+      .footer-block-links {
+        border-bottom: 1px solid white;
+      }
+    }
+
+    li {
+      margin-bottom: 0.3125rem;
+    }
+
+    li a {
+      font-size: $font-size-sm;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        color: $brand-primary;
+      }
+    }
   }
 }
