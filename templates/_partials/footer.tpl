@@ -48,7 +48,7 @@
           {hook h="displaySocialButtons" mod="hs_topmenu"}
         </div>
       </div>
-      <div class="">
+      <div class="footer-main-links">
         <div class="col-xs-12 p-0">
           {widget name="ps_linklist" hook="displayFooter"}
         </div>

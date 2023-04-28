@@ -38,12 +38,22 @@
   overflow: hidden;
 
   .footer-blocks {
-    .footer-block-logo {
-      margin-top: 15px;
-    }
     .footer-block-links {
       border-bottom: none;
     }
+    .footer-block-content {
+      margin-top: 30px;
+    }
+  }
+
+  .wrapper {
+    /* stylelint-disable */
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* stylelint-enable */
   }
 
   li {
@@ -59,6 +69,19 @@
       color: $brand-primary;
     }
   }
+
+  .links {
+    ul {
+      margin-bottom: 0;
+      > li {
+        font-weight: 600;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -68,50 +91,9 @@
     padding-top: 0;
 
     .footer-container {
-      padding-top: $extra-large-space;
-      overflow: hidden;
-
       .footer-blocks {
         .footer-block-links {
-          padding-bottom: 30px;
-          margin-bottom: 30px;
           border-bottom: none;
-        }
-      }
-
-      li {
-        margin-bottom: 0.3125rem;
-      }
-
-      li a {
-        font-size: $font-size-sm;
-        color: white;
-        cursor: pointer;
-
-        &:hover {
-          color: $brand-primary;
-        }
-      }
-    }
-
-    .wrapper {
-      /* stylelint-disable */
-      padding-right: 0 !important;
-      padding-left: 0 !important;
-      /* stylelint-enable */
-    }
-
-    .links {
-      padding-top: 10px;
-      margin-top: 30px;
-      ul {
-        margin-bottom: 0;
-        > li {
-          font-weight: 600;
-
-          a {
-            color: white;
-          }
         }
       }
     }
@@ -120,27 +102,10 @@
 
 @include media-breakpoint-down(md) {
   .footer-container {
-    padding-top: $extra-large-space;
-    overflow: hidden;
-
     .footer-blocks {
        border-bottom: 1px solid white;
       .footer-block-links {
         border-bottom: none;
-      }
-    }
-
-    li {
-      margin-bottom: 0.3125rem;
-    }
-
-    li a {
-      font-size: $font-size-sm;
-      color: white;
-      cursor: pointer;
-
-      &:hover {
-        color: $brand-primary;
       }
     }
   }
@@ -148,27 +113,10 @@
 
 @include media-breakpoint-down(xs) {
   .footer-container {
-    padding-top: $extra-large-space;
-    overflow: hidden;
-
     .footer-blocks {
       border-bottom: none;
       .footer-block-links {
         border-bottom: 1px solid white;
-      }
-    }
-
-    li {
-      margin-bottom: 0.3125rem;
-    }
-
-    li a {
-      font-size: $font-size-sm;
-      color: white;
-      cursor: pointer;
-
-      &:hover {
-        color: $brand-primary;
       }
     }
   }
