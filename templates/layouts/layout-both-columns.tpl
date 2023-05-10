@@ -52,15 +52,17 @@
       </header>
 
       <section id="wrapper">
-        {block name='notifications'}
+{*        {block name='notifications'}
           {include file='_partials/notifications.tpl'}
-        {/block}
+        {/block}*}
 
         {hook h="displayWrapperTop"}
-        <div class="container">
+        <div class="container-fluid p-0">
+{*
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}
+*}
 
           {block name="left_column"}
             <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
