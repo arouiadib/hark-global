@@ -56,10 +56,7 @@
             <div class="wrapper">
                 <div class="side intro-left">
                     <div class="intro-title">
-                        {l s='HARK Repair est spécialiste en restauration de matériel HiFi vintage à Paris' d='Modules.Hsnewestproducts.Shop'}
-                    </div>
-                    <div class="intro-description">
-                        {l s='HARK Repair est spécialiste en restauration de matériel HiFi vintage à Paris' d='Modules.Hsnewestproducts.Shop'}
+                        {l s='HARK is a RECORDS store and a HiFi REPAIR workshop located in Paris 11e.' d='Modules.Hsnewestproducts.Shop'}
                     </div>
                 </div>
                 <div class="side intro-right">
