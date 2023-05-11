@@ -51,19 +51,25 @@
         {/block}
       </header>
 
+      <section id="intro-global">
+        <div class="">
+            <div class="wrapper">
+                <div class="side intro-left">
+                    <div class="intro-title">
+                        {l s='HARK Repair est spécialiste en restauration de matériel HiFi vintage à Paris' d='Modules.Hsnewestproducts.Shop'}
+                    </div>
+                </div>
+                <div class="side intro-right">
+                    <figure>
+                        {widget name="ps_imageslider" hook="displayHome"}
+                    </figure>
+                </div>
+            </div>
+        </div>
+      </section>
+
       <section id="wrapper">
-{*        {block name='notifications'}
-          {include file='_partials/notifications.tpl'}
-        {/block}*}
-
-        {hook h="displayWrapperTop"}
         <div class="container-fluid p-0">
-{*
-          {block name='breadcrumb'}
-            {include file='_partials/breadcrumb.tpl'}
-          {/block}
-*}
-
           {block name="left_column"}
             <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
               {if $page.page_name == 'product'}
