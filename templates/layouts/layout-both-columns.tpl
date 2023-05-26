@@ -56,7 +56,19 @@
             <div class="wrapper">
                 <div class="side intro-left">
                     <div class="intro-title">
-                        {l s='HARK is a RECORDS store and a HiFi REPAIR workshop located in Paris 11e.' d='Modules.Hsnewestproducts.Shop'}
+                        {l s='Hark is a' d='Shop.Theme.Catalog'}
+                        <a href="/records/">
+                            <span>
+                                <img src="/modules/hs_topmenu/views/img/records.svg" alt="" width="" height="20px">
+                            </span>
+                        </a>
+                        {l s='store and a HiFi' d='Shop.Theme.Catalog'}
+                        <a href="/repair/">
+                            <span>
+                                <img src="/modules/hs_topmenu/views/img/repair.svg" alt="" width="" height="20px">
+                            </span>
+                        </a>
+                        {l s='workshop located in Paris 11e.' d='Shop.Theme.Catalog'}
                     </div>
                 </div>
                 <div class="side intro-right">
