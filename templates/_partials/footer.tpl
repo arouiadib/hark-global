@@ -37,9 +37,6 @@
     </div>
     <div class="col-xs-12 col-md-6 footer-main">
       <div class="footer-newsletter-social">
-        <div class="">
-          <label>{l s='Stay Tuned'}</label>
-        </div>
         <div class="col-sm-12 col-md-8 p-0">
           {widget name="ps_emailsubscription"}
         </div>

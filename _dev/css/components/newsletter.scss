@@ -1,10 +1,9 @@
 .block_newsletter {
-  @include search-box();
+  font-family: GlenmorangieSerif-Regular;
   float: inherit;
   width: 100%;
   max-width: 50rem;
   margin: auto;
-  /*margin-bottom: 0.625rem;*/
   clear: both;
   font-size: $font-size-sm;
   background: $white;
@@ -22,6 +21,9 @@
     border:1px solid grey;
     padding:2px;
 
+    input {
+      box-shadow: none;
+    }
     input[type="email"] {
       width: 80%;
       border: 1px solid $border-gray;
@@ -33,17 +35,22 @@
       }
     }
 
-    input {
-      box-shadow: none;
-    }
-
-   input[type="submit"] {
-      /*border:1px solid blue;*/
-      background: black;
-      color:white;
-       height: 30px;
-       width: 30px;
-    }
+     input[type="submit"] {
+       font-family: POLICESTUDIOHARKSANS-REGULAR;
+       border: none;
+       background: black;
+       color:white;
+       height: 28px;
+       width: 36px;
+       right: 3px;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       font-weight: 400;
+       font-size: 12px;
+       line-height: 10px;
+       text-transform: uppercase;
+      }
   }
 
   .alert {

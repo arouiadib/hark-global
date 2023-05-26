@@ -59,13 +59,13 @@
                         {l s='Hark is a' d='Shop.Theme.Catalog'}
                         <a href="/records/">
                             <span>
-                                <img src="/modules/hs_topmenu/views/img/records.svg" alt="" width="" height="20px">
+                                <img src="/modules/hs_topmenu/views/img/records.svg" alt="" width="" height="26px">
                             </span>
                         </a>
                         {l s='store and a HiFi' d='Shop.Theme.Catalog'}
                         <a href="/repair/">
                             <span>
-                                <img src="/modules/hs_topmenu/views/img/repair.svg" alt="" width="" height="20px">
+                                <img src="/modules/hs_topmenu/views/img/repair.svg" alt="" width="" height="26px">
                             </span>
                         </a>
                         {l s='workshop located in Paris 11e.' d='Shop.Theme.Catalog'}

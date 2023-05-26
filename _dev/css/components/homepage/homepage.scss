@@ -1,7 +1,7 @@
 #intro-global {
   .wrapper {
     background: #D3D3D3;
-    font-family: 'Glenmorangie Serif';
+    font-family: GlenmorangieSerif-Regular;
     .intro-left, .intro-right {
       width: 100%;
       position: relative;
@@ -15,7 +15,7 @@
       min-height: 460px;
       .intro-title {
         position: absolute;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         font-style: normal;
         font-weight: 400;
