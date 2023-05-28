@@ -32,9 +32,13 @@
     {block name='head'}
       {include file='_partials/head.tpl'}
     {/block}
+
+      {include file='_partials/facebook-pixel.tpl'}
+      {include file='_partials/google-tag-manager-head.tpl'}
   </head>
 
   <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
+    {include file='_partials/google-tag-manager-body.tpl'}
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
