@@ -32,9 +32,13 @@
     {block name='head'}
       {include file='_partials/head.tpl'}
     {/block}
+
+      {include file='_partials/facebook-pixel.tpl'}
+      {include file='_partials/google-tag-manager-head.tpl'}
   </head>
 
   <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
+    {include file='_partials/google-tag-manager-body.tpl'}
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
@@ -56,7 +60,19 @@
             <div class="wrapper">
                 <div class="side intro-left">
                     <div class="intro-title">
-                        {l s='HARK is a RECORDS store and a HiFi REPAIR workshop located in Paris 11e.' d='Modules.Hsnewestproducts.Shop'}
+                        {l s='Hark is a' d='Shop.Theme.Catalog'}
+                        <a href="/records/">
+                            <span>
+                                <img src="/modules/hs_topmenu/views/img/records.svg" alt="" width="" height="26px">
+                            </span>
+                        </a>
+                        {l s='store and a HiFi' d='Shop.Theme.Catalog'}
+                        <a href="/repair/">
+                            <span>
+                                <img src="/modules/hs_topmenu/views/img/repair.svg" alt="" width="" height="26px">
+                            </span>
+                        </a>
+                        {l s='workshop located in Paris 11e.' d='Shop.Theme.Catalog'}
                     </div>
                 </div>
                 <div class="side intro-right">

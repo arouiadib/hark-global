@@ -29,7 +29,7 @@
                 name="email"
                 type="email"
                 value="{$value}"
-                placeholder="{l s='Subscribe to the newsletter' d='Shop.Forms.Labels'}"
+                placeholder="{l s='Stay tuned and sign up to our newsletter' d='Shop.Forms.Labels'}"
                 aria-labelledby="block-newsletter-label"
                 required
               >
