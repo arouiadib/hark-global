@@ -77,7 +77,8 @@
                 </div>
                 <div class="side intro-right">
                     <figure>
-                        {widget name="ps_imageslider" hook="displayHome"}
+                        <img src="{$urls.img_url}homepage/MAP-final.jpg" alt="">
+                        {*{widget name="ps_imageslider" hook="displayHome"}*}
                     </figure>
                 </div>
             </div>
