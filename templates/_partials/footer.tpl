@@ -51,5 +51,8 @@
         </div>
       </div>
     </div>
+    {block name='hook_footer'}
+      {hook h='displayFooter'}
+    {/block}
   </div>
 </div>
