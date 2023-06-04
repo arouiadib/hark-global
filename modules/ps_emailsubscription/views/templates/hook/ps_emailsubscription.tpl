@@ -24,34 +24,29 @@
  *}
 
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12 p-0" id="blockEmailSubscription_{$hookName}">
-      <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
-              <input
+    <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
+        <input
                 name="email"
                 type="email"
                 value="{$value}"
                 placeholder="{l s='Stay tuned and sign up to our newsletter' d='Shop.Forms.Labels'}"
                 aria-labelledby="block-newsletter-label"
                 required
-              >
-              <input
-                      class="float-xs-right"
-                      name="submitNewsletter"
-                      type="submit"
-                      value="{l s='OK' d='Shop.Theme.Actions'}"
-              >
-            <input type="hidden" name="blockHookName" value="{$hookName}" />
-            <input type="hidden" name="action" value="0">
-      </form>
+        >
+        <input
+                class="float-xs-right"
+                name="submitNewsletter"
+                type="submit"
+                value="{l s='OK' d='Shop.Theme.Actions'}"
+        >
+        <input type="hidden" name="blockHookName" value="{$hookName}" />
+        <input type="hidden" name="action" value="0">
+    </form>
 
-      <div class="col-xs-12">
-        {if $msg}
-          <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
-            {$msg}
-          </p>
-        {/if}
+    <div class="col-xs-12">
         {hook h='displayNewsletterRegistration'}
         {if isset($id_module)}
-          {hook h='displayGDPRConsent' id_module=$id_module}
+            {hook h='displayGDPRConsent' id_module=$id_module}
         {/if}
-      </div>
+    </div>
 </div>

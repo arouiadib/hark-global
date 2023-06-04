@@ -36,10 +36,11 @@ $(document).ready(function () {
             cache: false,
             data: $(this).serialize(),
             success: function (data) {
+                $('p.alert').remove();
                 if (data.nw_error) {
-                    $('<p class="alert alert-danger block_newsletter_alert">' + data.msg + '</p>').insertAfter(psemailsubscriptionForm);
+                    $('<p class="alert alert-danger">' + data.msg + '</p>').insertAfter(psemailsubscriptionForm.next());
                 } else {
-                    $('<p class="alert alert-success block_newsletter_alert">' + data.msg + '</p>').insertAfter(psemailsubscriptionForm);
+                    $('<p class="alert alert-success">' + data.msg + '</p>').insertAfter(psemailsubscriptionForm.next());
                 }
             },
             error: function (err) {
