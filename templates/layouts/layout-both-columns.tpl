@@ -66,13 +66,13 @@
                                 <img src="/modules/hs_topmenu/views/img/records.svg" alt="" width="" height="26px">
                             </span>
                         </a>
-                        {l s='store and a HiFi' d='Shop.Theme.Catalog'}
+                        {l s='store and a Hifi' d='Shop.Theme.Catalog'}
                         <a href="/repair/">
                             <span>
                                 <img src="/modules/hs_topmenu/views/img/repair.svg" alt="" width="" height="26px">
                             </span>
                         </a>
-                        {l s='workshop located in Paris 11e.' d='Shop.Theme.Catalog'}
+                        {l s='workshop located in Paris 11e' d='Shop.Theme.Catalog'}
                     </div>
                 </div>
                 <div class="side intro-right">
