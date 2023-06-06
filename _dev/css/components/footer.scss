@@ -1,7 +1,9 @@
 #footer {
   background-color: #4E4E4E;
   color: white;
-
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
   .logo, .logo-social {
       filter: brightness(0) invert(1);
   }
@@ -10,27 +12,17 @@
   }
 }
 
-
 .linklist {
   .blockcms-title a {
     color: $gray-darker;
   }
 }
-
 .account-list a {
   color: $gray;
 
   &:hover {
     color: $brand-primary;
   }
-}
-
-.blockcms-title,
-.myaccount-title,
-.myaccount-title a,
-.block-contact-title {
-  font-size: $base-font-size;
-  font-weight: 700;
 }
 
 .footer-container {
@@ -46,6 +38,13 @@
       a {
         color: white;
       }
+    }
+  }
+  .footer-main {
+    .footer-newsletter-social {
+    }
+    .social-links{
+      padding-top: 5px;
     }
   }
 
@@ -64,7 +63,6 @@
   }
 
   li a {
-    font-size: $font-size-sm;
     color: white;
     cursor: pointer;
 
@@ -77,8 +75,6 @@
     ul {
       margin-bottom: 0;
       > li {
-        font-weight: 600;
-
         a {
           color: white;
         }
@@ -94,6 +90,7 @@
         border-bottom: none;
       }
     }
+
   }
 }
 
@@ -107,12 +104,9 @@
     }
     .footer-main {
       .footer-newsletter-social {
-        padding-top: 30px;
-        padding-bottom: 30px;
       }
       .social-links{
-        padding-top: 6px;
-        padding-bottom: 20px;
+
       }
     }
   }
@@ -130,6 +124,16 @@
       }
       .footer-block-logo {
         padding-top: 2.5rem;
+      }
+    }
+
+    .footer-main {
+      .footer-newsletter-social {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .social-links{
+        padding-top: 20px;
       }
     }
   }

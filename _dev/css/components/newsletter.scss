@@ -2,6 +2,7 @@
   font-family: GlenmorangieSerif-Regular;
   float: inherit;
   width: 100%;
+  height: 30px;
   max-width: 50rem;
   margin: auto;
   clear: both;
@@ -17,7 +18,7 @@
   form {
     display:flex;
     flex-direction:row;
-    height: 36px;
+    height: 30px;
     border:1px solid grey;
     padding:2px;
 
@@ -29,7 +30,7 @@
       border: 1px solid grey;
       flex-grow:2;
       border:none;
-
+      color: black;
       &:focus {
         outline: 0px;
       }
@@ -40,15 +41,15 @@
       border: none;
       background: black;
       color:white;
-      height: 28px;
-      width: 36px;
+      height: 24px;
+      width: 28px;
       right: 3px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       font-weight: 400;
-      font-size: 12px;
-      line-height: 10px;
+      font-size: 11px;
+      line-height: 15px;
       text-transform: uppercase;
       cursor: pointer;
     }
@@ -97,4 +98,17 @@
   .block_newsletter {
     padding-top: 1rem;
   }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
 }
