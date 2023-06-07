@@ -30,21 +30,32 @@
   overflow: hidden;
 
   .footer-blocks {
-    .footer-block-links {
-      border-bottom: none;
-    }
-    .footer-block-content {
-      margin-top: 30px;
-      a {
-        color: white;
+    .footer-block {
+      padding-top: 2px;
+      .footer-block-links {
+        border-bottom: none;
+      }
+      .footer-block-content {
+        margin-top: 30px;
+        a {
+          color: white;
+        }
+        .contact {
+          margin-top: 31px;
+        }
       }
     }
   }
   .footer-main {
     .footer-newsletter-social {
+      .social-links{
+        padding-top: 5px;
+      }
     }
-    .social-links{
-      padding-top: 5px;
+    .footer-main-links {
+      .links{
+        margin-top: 60px;
+      }
     }
   }
 
