@@ -24,6 +24,12 @@ meta:
     layout-right-column:
       name: Two Columns, small right column
       description: Two columns with a small right column
+    layout-homepage:
+      name: Home page layout
+      description: One large column for homepage
+    layout-content-only:
+      name: Layout content only
+      description: Only content
 
 assets:
   # If you're using this theme as child and you want to load

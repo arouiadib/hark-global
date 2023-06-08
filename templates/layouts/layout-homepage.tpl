@@ -55,6 +55,35 @@
         {/block}
       </header>
 
+      <section id="intro-global">
+        <div class="">
+            <div class="wrapper">
+                <div class="side intro-left">
+                    <div class="intro-title">
+                        {l s='Hark is a' d='Shop.Theme.Catalog'}
+                        <a href="/records/">
+                            <span>
+                                <img src="/modules/hs_topmenu/views/img/records.svg" alt="" width="" height="26px">
+                            </span>
+                        </a>
+                        {l s='store and a Hifi' d='Shop.Theme.Catalog'}
+                        <a href="/repair/">
+                            <span>
+                                <img src="/modules/hs_topmenu/views/img/repair.svg" alt="" width="" height="26px">
+                            </span>
+                        </a>
+                        {l s='workshop located in Paris 11e' d='Shop.Theme.Catalog'}
+                    </div>
+                </div>
+                <div class="side intro-right">
+                    <figure>
+                        <img src="{$urls.img_url}homepage/MAP-final.jpg" alt="">
+                        {*{widget name="ps_imageslider" hook="displayHome"}*}
+                    </figure>
+                </div>
+            </div>
+        </div>
+      </section>
 
       <section id="wrapper">
         <div class="container-fluid p-0">
