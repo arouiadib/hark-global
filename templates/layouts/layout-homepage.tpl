@@ -84,7 +84,7 @@
             </div>
         </div>
       </section>
-        
+
 
       <footer id="footer" class="js-footer">
         {block name="footer"}
