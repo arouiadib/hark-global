@@ -25,7 +25,7 @@
 <div class="links">
   <div class="">
   {foreach $linkBlocks as $linkBlock}
-    <div class="col-md-6 col-lg-12 p-0 wrapper">
+    <div class="col-md-6 col-lg-12 p-0">
       <ul id="footer_sub_menu_{$linkBlock.id}">
         {foreach $linkBlock.links as $link}
           <li>

@@ -30,7 +30,7 @@
     .footer-block {
       &.repair {
         .footer-block-logo {
-          min-height: 60px;
+          min-height: 16px;
           .footer-logo {
 
             position: absolute;
@@ -40,15 +40,16 @@
               height: 23px;
             }
           }
-
-
-
-
+        }
+        .footer-block-links {
+          .links {
+            margin-top: 30px;
+          }
         }
       }
       &.records {
         .footer-block-logo {
-          min-height: 60px;
+          min-height: 16px;
             .footer-logo {
               position: absolute;
               height: 26px;
@@ -82,7 +83,7 @@
     }
     .footer-main-links {
       .links{
-        margin-top: 74px;
+        margin-top: 78px;
       }
     }
   }
