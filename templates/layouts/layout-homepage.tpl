@@ -55,6 +55,7 @@
         {/block}
       </header>
 
+{*
       <section id="intro-global">
         <div class="">
             <div class="wrapper">
@@ -78,12 +79,15 @@
                 <div class="side intro-right">
                     <figure>
                         <img src="{$urls.img_url}homepage/MAP-final.jpg" alt="">
-                        {*{widget name="ps_imageslider" hook="displayHome"}*}
+                        *}
+{*{widget name="ps_imageslider" hook="displayHome"}*}{*
+
                     </figure>
                 </div>
             </div>
         </div>
       </section>
+*}
 
 
       <footer id="footer" class="js-footer">

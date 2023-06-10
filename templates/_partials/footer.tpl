@@ -32,25 +32,30 @@
 </div>
 <div class="footer-container">
   <div class="container-fluid">
-    <div class="col-xs-12 col-md-6 footer-blocks">
-      {hook h="displaySubShopsBlocks" mod="hs_topmenu"}
-    </div>
-    <div class="col-xs-12 col-md-6 footer-main">
-      <div class="footer-newsletter-social">
-        <div class="col-sm-12 col-md-8 p-0">
-          {widget name="ps_emailsubscription"}
+    <div class="row">
+      <div class="col-xs-12 col-md-6 footer-blocks pr-0">
+        {hook h="displaySubShopsBlocks" mod="hs_topmenu"}
+      </div>
+      <div class="col-xs-12 col-md-6 footer-main">
+        <div class="footer-newsletter-social">
+          <div class="col-sm-12 col-md-4"></div>
+          <div class="col-sm-12 col-md-10 col-lg-6">
+            {widget name="ps_emailsubscription"}
+          </div>
+          <div class="col-sm-12 col-md-2">
+            {* This is a duplicated code from hs_topmenu*}
+            {hook h="displaySocialButtons" mod="hs_topmenu"}
+          </div>
         </div>
-        <div class="col-sm-12 col-md-4 p-0">
-          {* This is a duplicated code from hs_topmenu*}
-          {hook h="displaySocialButtons" mod="hs_topmenu"}
+        <div class="footer-main-links">
+          <div class="col-sm-12 col-md-4"></div>
+          <div class="col-xs-12 col-md-6">
+            {widget name="ps_linklist" hook="displayFooter"}
+          </div>
         </div>
       </div>
-      <div class="footer-main-links">
-        <div class="col-xs-12 p-0">
-          {widget name="ps_linklist" hook="displayFooter"}
-        </div>
-      </div>
     </div>
+
     {block name='hook_footer'}
       {hook h='displayFooter'}
     {/block}

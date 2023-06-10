@@ -7,9 +7,6 @@
   .logo, .logo-social {
       filter: brightness(0) invert(1);
   }
-  .logo {
-    max-width: 150px;
-  }
 }
 
 .linklist {
@@ -31,6 +28,37 @@
 
   .footer-blocks {
     .footer-block {
+      &.repair {
+        .footer-block-logo {
+          min-height: 60px;
+          .footer-logo {
+
+            position: absolute;
+            height: 23px;
+            width: 102px;
+            .logo {
+              height: 23px;
+            }
+          }
+
+
+
+
+        }
+      }
+      &.records {
+        .footer-block-logo {
+          min-height: 60px;
+            .footer-logo {
+              position: absolute;
+              height: 26px;
+              .logo {
+                height: 26px;
+              }
+            }
+        }
+      }
+
       padding-top: 2px;
       .footer-block-links {
         border-bottom: none;
