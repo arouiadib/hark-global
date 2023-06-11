@@ -25,14 +25,14 @@
 .footer-container {
   padding-top: $extra-large-space;
   overflow: hidden;
-
+  padding-bottom: 50px;
   .footer-blocks {
     .footer-block {
+      padding-top: 2px;
       &.repair {
         .footer-block-logo {
           min-height: 16px;
           .footer-logo {
-
             position: absolute;
             height: 23px;
             width: 102px;
@@ -44,6 +44,9 @@
         .footer-block-links {
           .links {
             margin-top: 30px;
+          }
+          .contact {
+            margin-top: 31px;
           }
         }
       }
@@ -58,11 +61,12 @@
               }
             }
         }
-      }
-
-      padding-top: 2px;
-      .footer-block-links {
-        border-bottom: none;
+        .footer-block-links {
+          border-bottom: none;
+          .contact {
+            margin-top: 31px;
+          }
+        }
       }
       .footer-block-content {
         margin-top: 30px;
