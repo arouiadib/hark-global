@@ -45,9 +45,6 @@
           .links {
             margin-top: 30px;
           }
-          .contact {
-            margin-top: 31px;
-          }
         }
       }
       &.records {
@@ -65,16 +62,19 @@
           border-bottom: none;
           .contact {
             margin-top: 31px;
+            a {
+              color: white;
+            }
           }
         }
       }
       .footer-block-content {
         margin-top: 30px;
-        a {
-          color: white;
-        }
         .contact {
           margin-top: 31px;
+          a {
+            color: white;
+          }
         }
       }
     }
